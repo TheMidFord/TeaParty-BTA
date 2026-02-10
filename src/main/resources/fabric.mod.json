@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
+	"id": "teaparty",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This mod aims to help new BTA modders.",
+	"name": "Tea Party!!!",
+	"description": "Beverages.",
 	"authors": [
-		"Turnip Labs"
+		"MaliceDevelopment"
 	],
 	"contact": {
 		"homepage": "",
@@ -16,20 +16,23 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+			"malicedev.teaparty.Main"
 		],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"malicedev.teaparty.Main"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"malicedev.teaparty.Main"
+		],
+		"initModels": [
+			"malicedev.teaparty.ModModels"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"malicedev.teaparty.Main"
 		]
 	},
 	"mixins": [
-		"examplemod.mixins.json"
+      "teaparty.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${fabricloader}",

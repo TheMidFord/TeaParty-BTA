@@ -1,0 +1,36 @@
+{
+  "multipart": [
+    {
+      "apply":{
+        "model": "teaparty:block/kettle_0"
+      },
+      "when": {
+        "side": "north"
+      }
+    },
+    {
+      "apply":{
+        "model": "teaparty:block/kettle_south"
+      },
+      "when": {
+        "side": "south"
+      }
+    },
+    {
+      "apply":{
+        "model": "teaparty:block/kettle_east"
+      },
+      "when": {
+        "side": "east"
+      }
+    },
+    {
+      "apply":{
+        "model": "teaparty:block/kettle_west"
+      },
+      "when": {
+        "side": "west"
+      }
+    }
+  ]
+}

@@ -15,7 +15,7 @@ public class ModModels implements ModelEntrypoint {
 	@Override
 	public void initBlockModels(BlockModelDispatcher blockModelDispatcher) {
 		ModelHelper.setBlockModel(ModBlocks.KettleBlock, ()->
-			new BlockModelDFJava<>(ModBlocks.KettleBlock, DragonFly.loadBlockModel("teaparty:block/kettle_0"))
+			new BlockModelDFJava<>(ModBlocks.KettleBlock, DragonFly.loadBlockModel("teaparty:block/kettle_0")).setStateData("teaparty:kettle").setStateInterpreter(new RotatableStateInterpreter())
 		);
 
 	}

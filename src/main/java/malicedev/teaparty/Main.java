@@ -3,6 +3,8 @@ package malicedev.teaparty;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import turniplabs.halplibe.helper.ModelHelper;
+import turniplabs.halplibe.helper.TextureHelper;
 import turniplabs.halplibe.util.ConfigHandler;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
@@ -38,6 +40,7 @@ public class Main implements ModInitializer, RecipeEntrypoint, GameStartEntrypoi
 
 	@Override
 	public void beforeGameStart() {
+
 		ModBlocks.init();
 		ModItems.init();
 	}

@@ -18,6 +18,9 @@
 		"main": [
 			"malicedev.teaparty.Main"
 		],
+		"beforeClientStart": [
+			"malicedev.teaparty.MainClient"
+		],
 		"beforeGameStart": [
 			"malicedev.teaparty.Main"
 		],

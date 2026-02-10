@@ -16,7 +16,7 @@ public class ItemFoodTea extends ItemFood {
 	public ItemStack onUseItem(ItemStack itemstack, World world, Player entityplayer) {
 		if (itemstack.consumeItem(entityplayer)) {
 			entityplayer.eatFood(this);
-			world.playSoundAtEntity(entityplayer, entityplayer, "newsound:random.drink", 0.5F + (itemRand.nextFloat() - itemRand.nextFloat()) * 0.1F, 1.1F + (itemRand.nextFloat() - itemRand.nextFloat()) * 0.1F);
+			world.playSoundAtEntity(entityplayer, entityplayer, "random.splash", 0.5F + (itemRand.nextFloat() - itemRand.nextFloat()) * 0.1F, 1.1F + (itemRand.nextFloat() - itemRand.nextFloat()) * 0.1F);
 			return new ItemStack(ModItems.TeaCup);
 		}
 		else {

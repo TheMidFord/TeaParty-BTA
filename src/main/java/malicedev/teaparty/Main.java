@@ -10,7 +10,7 @@ import turniplabs.halplibe.util.RecipeEntrypoint;
 import java.util.Properties;
 
 public class Main implements ModInitializer, RecipeEntrypoint, GameStartEntrypoint {
-	public static final String MOD_ID = "assets/teaparty";
+	public static final String MOD_ID = "teaparty";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static int itemId;
 	public static int blockId;

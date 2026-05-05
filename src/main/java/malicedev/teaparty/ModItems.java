@@ -26,6 +26,7 @@ public class ModItems {
 	public static Item TeaCup_Bluebell;
 	public static Item TeaCup_Heather;
 	public static Item TeaCup_Marigold;
+	public static Item Cup_OfJava;
 
 	public static void init(){
 
@@ -77,6 +78,10 @@ public class ModItems {
 		TeaCup_Marigold = new ItemBuilder(Main.MOD_ID)
 			.setStackSize(1)
 			.build(new ItemFoodTea("teacup_marigold","teaparty:item/teacup_marigold", itemId++,2, 1));
+		Cup_OfJava = new ItemBuilder(Main.MOD_ID)
+			.setStackSize(1)
+			.build(new ItemCupOfJava("cup_ofjava","teaparty:item/cup_ofjava", itemId++,0, 0));
+
 
 
 	}

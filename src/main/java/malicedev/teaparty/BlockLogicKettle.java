@@ -8,10 +8,12 @@ import net.minecraft.core.entity.player.Player;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.util.helper.Side;
 import net.minecraft.core.world.World;
+import net.minecraft.core.world.WorldSource;
 
 public class BlockLogicKettle extends BlockLogicRotatable {
 	public BlockLogicKettle(Block<?> block, Material material) {
 		super(block, material);
+		this.setBlockBounds(0.265F, 0.0F, 0.265F, 0.765F, 0.4F, 0.765F);
 
 	}
 
@@ -27,5 +29,15 @@ public class BlockLogicKettle extends BlockLogicRotatable {
 		}
 		return true;
 
+	}
+
+	@Override
+	public boolean renderAsNormalBlockOnCondition(WorldSource world, int x, int y, int z) {
+		return false;
+	}
+
+	@Override
+	public boolean isSolidRender() {
+		return false;
 	}
 }

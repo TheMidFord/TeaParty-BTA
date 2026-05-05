@@ -24,6 +24,8 @@ public class ModModels implements ModelEntrypoint {
 	public void initItemModels(ItemModelDispatcher itemModelDispatcher) {
 		itemModelDispatcher.addDispatch(new ItemModelStandard(ModItems.TeaCup_Rose, null).setIcon("minecraft:item/stick"));
 		itemModelDispatcher.addDispatch(new ItemModelStandard(ModItems.TeaCup, null).setIcon("minecraft:item/bowl"));
+		itemModelDispatcher.addDispatch(new ItemModelStandard(ModItems.Cup_OfJava, null).setIcon("teaparty:item/cupofjava"));
+
 
 	}
 
